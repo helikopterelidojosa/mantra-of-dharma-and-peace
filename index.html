@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mantra of dharma and peace</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    
+    <style>
+        body{
+            background-color: rgb(34, 47, 58);
+            color:#70b4f8;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<!-- sarva-dharmān paritjadžja    mām ēkam šaranam vradža
+aham tvām sarva-pāpēbhjo    mokšajišjāmi mā šučah -->
+
+<body>
+    <p id="p1" onclick="p2()"><sup>1/4</sup><br> sarva-dharmān paritjadžja<br><br> next>></p>
+    <p id="p2" onclick="p3()" style="display: none;"><sup>2/4</sup><br> mām ēkam šaranam vradža<br><br>next>></p>
+    <p id="p3" onclick="p4()" style="display: none;"><sup>3/4</sup><br> aham tvām sarva-pāpēbhjo<br><br>next>></p>
+    <p id="p4" onclick="p1()" style="display: none;"><sup>4/4</sup><br> mokšajišjāmi mā šučah<br><br>next>></p>
+
+<script>
+function p1(){
+    document.getElementById("p4").style.display="none";
+    document.getElementById("p1").style.display="block";
+}
+
+
+function p2(){
+    document.getElementById("p1").style.display="none";
+    document.getElementById("p2").style.display="block";
+}
+
+function p3(){
+    document.getElementById("p2").style.display="none";
+    document.getElementById("p3").style.display="block";
+}
+
+function p4(){
+    document.getElementById("p3").style.display="none";
+    document.getElementById("p4").style.display="block";
+}
+
+</script>
+</body>
+</html>
